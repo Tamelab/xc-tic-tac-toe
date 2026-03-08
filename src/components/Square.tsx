@@ -1,4 +1,18 @@
-import Square from "./Square";
+import { useState } from "react";
+
+function Square() {
+  const [value, setValue] = useState("");
+
+  function handleClick() {
+    setValue("X");
+  }
+
+  return (
+    <button onClick={handleClick}>
+      {value}
+    </button>
+  );
+}
 
 export default function Board() {
   return (
