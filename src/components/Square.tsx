@@ -1,7 +1,25 @@
-export default function Square() {
+import Square from "./Square";
+
+export default function Board() {
   return (
-    <button>
-      X
-    </button>
+    <div>
+      <div>
+        <Square />
+        <Square />
+        <Square />
+      </div>
+
+      <div>
+        <Square />
+        <Square />
+        <Square />
+      </div>
+
+      <div>
+        <Square />
+        <Square />
+        <Square />
+      </div>
+    </div>
   );
 }
